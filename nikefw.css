@@ -1,0 +1,1102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    z-index: 2;
+}
+
+.top {
+    height: 50%;
+    width: 100%;
+    background-color: #2E4DDD;
+}
+
+.bottom {
+    height: 50%;
+    width: 100%;
+    background-color: #25252B;
+}
+
+.center {
+    height: 85%;
+    width: 90%;
+    background-color: #2F3031;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav {
+    padding: 0 85px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .prt1 {
+    display: flex;
+    align-items: center;
+    width: 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prt1 i {
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.nav h4 {
+    color: white;
+    font-size: 15px;
+}
+
+.nav .dot,
+.left .dot {
+    height: 5px;
+    width: 5px;
+    background-color: white;
+}
+
+.nav button {
+    padding: 5px 15px;
+    font-size: 1.5vw;
+    width: fit-content;
+
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    position: relative;
+    background-color: transparent;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    height: .5px;
+    width: 50%;
+    background-color: #fff;
+    left: 0%;
+    top: 0%;
+}
+
+.left {
+    left: 1%;
+    padding: 40px 0;
+    top: 15%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 70%;
+    width: 50px;
+
+}
+
+.left a {
+    rotate: 270deg;
+    color: white;
+    text-decoration: none;
+}
+.left #blu{
+    color: #2E4DDD;
+}
+
+.left::before {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 40%;
+    background-color: #fff;
+    left: 0%;
+    top: 30%;
+}
+
+.left::after {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 20%;
+    background-color: #fff;
+    left: 100%;
+    top: 40%;
+}
+
+.text {
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    height: 50%;
+    width: 80%;
+
+}
+
+.text::before {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 20%;
+    background-color: #fff;
+    left: 0%;
+    top: 0%;
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 30%;
+    background-color: #fff;
+    right: 0%;
+    bottom: 0%;
+}
+
+.text h1 {
+    font-size: 110px;
+    color: white;
+}
+
+.text button {
+    position: absolute;
+    right: 13%;
+    top: 45%;
+    background-color: #2E4DDD;
+    color: white;
+    padding: 15px 50px;
+    font-size: 18px;
+    border: none;
+    transition: all ease-in .4s;
+}
+.text button:hover{
+    background-color: white;
+    color: black;
+}
+.text .arrow {
+    position: absolute;
+    right: 2%;
+    top: 70%;
+    justify-content: space-between;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 350px;
+}
+
+.arrow i {
+    font-size: 26px;
+}
+
+.arrow h3 {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.text .line {
+    height: 1.5px;
+    width: 70px;
+    background-color: white;
+}
+
+.right {
+    right: 1%;
+    padding: 40px 0;
+    top: 26.5%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 55%;
+    width: 50px;
+}
+
+.right .r1 {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.r1 i {
+    font-size: 25px;
+    color: white;
+}
+
+.right .round {
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.right h4 {
+    rotate: 270deg;
+    color: white;
+    font-size: 18px;
+}
+
+.right .line {
+    height: 70px;
+    width: 2px;
+    background-color: white;
+}
+
+.right .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+}
+
+.box .dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    color: transparent;
+    border: 3px solid white;
+}
+
+.center img {
+    top: -6%;
+    left: 5%;
+    position: absolute;
+    height: 95vh;
+    z-index: 9;
+}
+
+.center .icon {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 3%;
+    top: 7%;
+    height: 80px;
+    width: 250px;
+
+}
+
+.icon .box {
+    background-color: rgb(0, 42, 255);
+    height: 60%;
+    width: 40%;
+}
+
+.icon img {
+    height: 103px;
+    rotate: 180deg;
+}
+
+.icon #left {
+    margin-left: 140px;
+    rotate: 0deg;
+
+}
+
+.page2 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #e0e0e0;
+}
+
+.page2 .box {
+    top: -3%;
+    position: absolute;
+    right: 11%;
+    height: 500px;
+    width: 500px;
+    background-color: #2F3031;
+    z-index: 18;
+    overflow: hidden;
+}
+.box .innb{
+    position: absolute;
+    height: 500px;
+    width: 2000px;
+    background-color: #2E4DDD;
+    left: -230%;
+    z-index: -1;
+    rotate: 45deg;
+}
+
+.page2 .boxb {
+    top: -8%;
+    position: absolute;
+    right: 14%;
+    height: 510px;
+    width: 510px;
+    background-color: transparent;
+    border: 20px solid rgb(255, 255, 255);
+    z-index: 15;
+    box-shadow: -2px 4px 10px black;
+}
+
+.page2 .box img {
+    margin-top: 30px;
+    height: 420px;
+}
+
+.page2 .container {
+    padding: 50px;
+    margin-left: 100px;
+    width: 40%;
+    height: 90%;
+}
+
+.container h1 {
+    position: relative;
+    font-size: 60px;
+    padding: 40px 0;
+}
+
+.container span {
+    color: #2E4DDD;
+}
+
+.container h1::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 90px;
+    background-color: black;
+}
+
+.container h1::after {
+    content: "";
+    position: absolute;
+    bottom: 23%;
+    right: 0%;
+    height: 4px;
+    width: 200px;
+    background-color: black;
+}
+
+.container p {
+    font-size: 18px;
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 0.707);
+}
+
+.container .arr {
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 4px 0px 200px;
+    display: flex;
+    height: 45px;
+    width: 280px;
+}
+
+.arr button {
+    font-size: 15px;
+    padding: 6px 30px;
+    white-space: nowrap;
+    border: 3.5px solid black;
+    position: relative;
+    transition: all ease 0.4s;
+}
+.arr button:hover{
+    background-color: #2E4DDD;
+    color: white;
+}
+
+.arr button::after {
+    content: "";
+    position: absolute;
+    bottom: 23%;
+    right: 30%;
+    height: 3.5px;
+    width: 70px;
+    top: -15px;
+    left: -3px;
+    background-color: black;
+}
+
+.arr button::before {
+    content: "";
+    position: absolute;
+    bottom: 23%;
+    right: 30%;
+    height: 3.5px;
+    width: 90px;
+    bottom: -15px;
+    right: 0;
+    background-color: black;
+}
+
+.arr img {
+    height: 55px;
+}
+
+.page2 .banner {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 32%;
+    top: 53%;
+    height: 200px;
+    width: 90px;
+    background-color: #ffffff;
+    z-index: 80;
+    padding-bottom: 20px;
+    z-index: 90;
+}
+
+.banner .line {
+    width: 3px;
+    height: 60px;
+    background-color: black;
+}
+
+.banner .dot {
+    height: 8px;
+    width: 8px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.banner h3 {
+    font-size: 28px;
+    font-family: voyage;
+}
+
+.page2 .bcover {
+    position: absolute;
+    height: 210px;
+    width: 120px;
+    background-color: transparent;
+    border: 3px solid rgb(0, 0, 0);
+    z-index: 1;
+    right: 31%;
+    top: 54%;
+}
+
+.b-text {
+    position: absolute;
+    right: 14%;
+    bottom: 26%;
+    height: 50px;
+    width: 230px;
+}
+
+.b-text h2 {
+    font-size: 30px;
+}
+
+.b-text h6 {
+    font-size: 15px;
+}
+
+.b-text::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    bottom: -10px;
+}
+
+.page3 {
+    position: relative;
+   position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #ececec4e;
+}
+
+.page3 .container {
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    width: 80%;
+
+}
+
+.page3 .container .round {
+    height: 220px;
+    width: 220px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container .round:nth-child(1) {
+    background-image: url(./WhatsApp\ Image\ 2023-04-01\ at\ 11.56.40\ PM.jpeg);
+}
+
+.container .round:nth-child(3) {
+    background-image: url(./WhatsApp\ Image\ 2023-04-02\ at\ 12.00.17\ AM.jpeg);
+}
+
+.container .round:nth-child(5) {
+    background-image: url(./WhatsApp\ Image\ 2023-04-02\ at\ 12.00.17\ AM\ \(1\).jpeg);
+}
+
+.page3 .container .round::after {
+    content: "";
+    height: 3px;
+    width: 60px;
+    background-color: black;
+    position: absolute;
+}
+
+.page3 .container .round::before {
+    content: "";
+    height: 3px;
+    width: 60px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.container .textu {
+    bottom: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+}
+
+.page3 .lefti {
+    align-items: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 0;
+    top: 42%;
+    height: 150px;
+    width: 40px;
+}
+
+.lefti .line {
+    height: 50px;
+    width: 2px;
+    background-color: black;
+}
+
+.lefti h3 {
+    border: 3px solid black;
+    padding: 4px;
+}
+
+.lefti img {
+    height: 50px;
+    rotate: 90deg;
+}
+
+.page4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+}
+
+.cont {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.cont video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.cont .overlay {
+    position: absolute;
+    padding: 50px 60px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.442);
+    z-index: 10;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.overlay span {
+    color: #2E4DDD;
+}
+
+.overlay .arrow {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 3%;
+    top: 7%;
+    height: 80px;
+    width: 240px;
+
+}
+
+.overlay .arrow .boxi {
+    background-color: rgb(0, 42, 255);
+    height: 60%;
+    width: 35%;
+}
+
+.overlay .arrow #rig {
+    position: absolute;
+    height: 93px;
+    rotate: 180deg;
+}
+
+.overlay .arrow #lef {
+    right: 0;
+    position: absolute;
+    height: 93px;
+}
+
+.overlay .lin {
+    margin-top: 30px;
+    width: 190px;
+    height: 3px;
+    background-color: rgb(255, 249, 249);
+}
+
+.overlay h2 {
+    padding: 40px 0;
+    color: #2E4DDD;
+    font-size: 60px;
+}
+
+.overlay h6 {
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.overlay i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.overlay h4 {
+    position: absolute;
+    font-size: 23px;
+    right: 4%;
+    font-size: 18px;
+    color: rgb(218, 218, 218);
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.page5 {
+    position: relative;
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: #e0e0e0;
+    display: flex;
+}
+.page5 .prt2{
+    margin-left: 50%;
+    height: 95%;
+    width: 50%;
+    background-color: red;
+    background-image: url(https://wallpapercave.com/wp/Bjn122C.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.page5 .rew{
+    padding: 40px;
+    height: 33vw;
+    width: 33vw;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    box-shadow: -0.4px 0px 20px black;
+}
+.page5 .rew h1{
+    font-size: 45px;
+    position: relative;
+}
+.page5 .rew h1::after{
+    content: "";
+    width: 80px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: -20%;
+    left: 10%;
+}
+.page5 .rew h4{
+    margin-left: 150px;
+    margin-top: 40px;
+    white-space: nowrap;
+    font-size: 20px;
+}
+.page5 .rew .inn{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40%;
+    width: 100%;
+   
+}
+.page5 .rew .inn .round{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #2E4DDD;
+    border: 10px solid black;
+    margin-left: -20px;
+}
+.page5 .rew .inn .txt{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+.page5 .rew .inn .txt h3{
+    margin-bottom: 20px;
+    margin-top: 33px;
+}
+.page5 .rew .inn .txt p{
+    font-size: 19px;
+    color: rgb(70, 70, 70);
+}
+.page5 .rew .inn img{
+    position: absolute;
+    height: 150px;
+    left: 3%;
+}
+.page5 .rew h2{
+    margin-left: 280px;
+    margin-top: -10px;
+    font-size: 16px;
+}
+.page5 .arr {
+    position: absolute;
+    left: -0%;
+    top: 38%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 4px 0px 200px;
+    display: flex;
+    height: 45px;
+    width: 280px;
+}
+
+.arr button {
+    font-size: 15px;
+    padding: 6px 30px;
+    white-space: nowrap;
+    border: 3.5px solid black;
+    position: relative;
+}
+
+.arr button::after {
+    content: "";
+    position: absolute;
+    bottom: 23%;
+    right: 30%;
+    height: 3.5px;
+    width: 70px;
+    top: -15px;
+    left: -3px;
+    background-color: black;
+}
+
+.arr button::before {
+    content: "";
+    position: absolute;
+    bottom: 23%;
+    right: 30%;
+    height: 3.5px;
+    width: 90px;
+    bottom: -15px;
+    right: 0;
+    background-color: black;
+}
+
+.arr img {
+    height: 55px;
+}
+.page5  .lefti {
+    align-items: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 0;
+    top: 38%;
+    height: 150px;
+    width: 40px;
+}
+
+.page5 .lefti .line {
+    height: 50px;
+    width: 2px;
+    background-color: black;
+}
+
+.page5 .lefti h3 {
+    border: 3px solid black;
+    padding: 4px;
+}
+
+.page5 .lefti img {
+    height: 50px;
+    rotate: 90deg;
+}
+.page5 .lst{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100px;
+    width: 50%;
+    left: 18.5%;
+    top: 67%;
+   justify-content: center;
+    z-index: 10;
+}
+.page5 .lst .doto{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 110px;
+    
+}
+.page5 .lst .doto .dot{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+.page5 .lst .doto .dot:nth-child(2){
+    background-color: transparent;
+    border: 5px solid blue;
+}
+.page5 .lst .linn{
+    height: 5px;
+    width: 93%;
+    background-color: black;
+}
+.page5 .lst .arr2 img{
+    height: 40px;
+}
+.page5 .lst .arr2 img:nth-child(1){
+    rotate: 180deg;
+}
+.page5 .prt2 .tt{
+    box-shadow: -0.4px -.4px 10px black;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    position: absolute;
+    height: 50px;
+    width: 600px;
+    background-color: rgb(245, 245, 245);
+    z-index: 20;
+    bottom: 17%;
+    right: 8%;
+}
+.tt h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+.page2  .lefti {
+    align-items: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 0;
+    top: 38%;
+    height: 150px;
+    width: 40px;
+}
+
+.page2 .lefti .line {
+    height: 50px;
+    width: 2px;
+    background-color: black;
+}
+
+.page2 .lefti h3 {
+    border: 3px solid black;
+    padding: 4px;
+}
+
+.page2 .lefti img {
+    height: 50px;
+    rotate: 90deg;
+}
+.page6{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #e0e0e0;
+}
+.page6 .subs{
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    height: 65%;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.page6 .subs h1{
+    font-size: 80px;
+    color: white;
+}
+.page6 .subs span{
+    color: #2E4DDD;
+}
+.page6 .subs #btn{
+    position: relative;
+    padding: 18px 100px;
+    background-color: transparent;
+    border: 4px solid #2E4DDD;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    transition: all ease 0.4s;
+}
+.page6 .subs #btn::before{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
+.page6 .subs #btn::after{
+    height: 2px;
+    width: 40%;
+    background-color: white;
+    content: "";
+    position: absolute;
+    left: 30%;
+    bottom: -100px;
+    margin-top: 78px;
+
+}
+.page6 .subs #btn:hover{
+    background-color: white;
+    color: black;
+}
+.page6 .subs h5{
+    color: white;
+    font-size: 19px;
+}
+.page6 .ban{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height: 150px;
+    width: 100px;
+    background-color: white;
+    left: 46%;
+    top: 23%;
+    z-index: 10;
+}
+.ban img{
+    rotate: 90deg;
+    height: 60px;
+}
+.ban .linnn{
+    height: 40px;
+    width: 3px;
+    background-color: black;
+    margin-left: 48%;
+    margin-top: 50px;
+}
+.page6 .banc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height: 200px;
+    width: 120px;
+    border: 3px solid black;
+    
+    left: 45.2%;
+    top: 18%;
+    z-index: 10;
+}
+.page7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    background-color: #e0e0e0;
+}
+.page7 .con{
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+    width: 85%;
+    
+}
+.con .lins{
+    height: 2px;
+    width: 100px;
+    background-color: black;
+}
